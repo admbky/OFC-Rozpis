@@ -19,47 +19,42 @@
       background-color: #ff99cc;
       padding: 10px 20px;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     header img {
-      height: 50px;
-      margin: 5px;
+      height: 60px;
     }
 
     .countdown-container {
-      flex: 1 1 100%;
+      flex-grow: 1;
       text-align: center;
-      margin: 10px 0;
     }
 
     .countdown-title {
       font-size: 28px;
       font-weight: bold;
       color: #80004d;
+      margin-bottom: 5px;
     }
 
     .countdown-time {
-      font-size: 16px;
+      font-size: 18px;
       color: #4d0039;
     }
 
     nav {
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 10px;
+      gap: 30px;
     }
 
     nav a {
       color: #4d0039;
       text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
-      padding: 6px 10px;
+      font-size: 20px;
     }
 
     nav a:hover {
@@ -67,43 +62,39 @@
     }
 
     main {
-      padding: 30px 10px;
+      padding: 40px 20px;
     }
 
     h2 {
       color: #cc0066;
-      font-size: 28px;
-      margin-bottom: 15px;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
 
     .group {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .group h3 {
-      font-size: 22px;
+      font-size: 28px;
       color: #800040;
-    }
-
-    .table-container {
-      overflow-x: auto;
     }
 
     table {
       margin: 0 auto;
       border-collapse: collapse;
-      min-width: 500px;
-      width: 100%;
+      width: 80%;
       max-width: 800px;
       background-color: #fff0f5;
       box-shadow: 0 4px 12px rgba(204, 0, 102, 0.2);
       border-radius: 12px;
+      overflow: hidden;
     }
 
     th, td {
-      padding: 10px;
+      padding: 12px 8px;
       border-bottom: 1px solid #ffcce0;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     th {
@@ -116,29 +107,18 @@
       font-weight: 600;
     }
 
-    tr:hover {
-      background-color: #ffe6f0;
+    tr:last-child td {
+      border-bottom: none;
     }
 
-    @media (max-width: 600px) {
-      .countdown-title {
-        font-size: 22px;
-      }
-
-      .countdown-time {
-        font-size: 14px;
-      }
-
-      th, td {
-        font-size: 14px;
-        padding: 8px;
-      }
+    tr:hover {
+      background-color: #ffe6f0;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="LOGO.webp" alt="Logo">
+    <img src="\Users\vbabc\Desktop\ADAM projekty\OFC25\LOGO.webp" alt="Logo">
     <div class="countdown-container">
       <div class="countdown-title">OFC25</div>
       <div class="countdown-time" id="countdown">Načítavam odpočítavanie...</div>
@@ -152,28 +132,24 @@
   <main>
     <h2>Skupina A</h2>
     <div class="group">
-      <div class="table-container">
-        <table>
-          <tr><th>Tím</th><th>Z</th><th>V</th><th>R</th><th>P</th><th>G</th><th>Body</th></tr>
-          <tr><td>Ošípané</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-          <tr><td>ŠK Altius</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-          <tr><td>Salibandy Bois</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-          <tr><td>Tím číslo 7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-        </table>
-      </div>
+      <table>
+        <tr><th>Tím</th><th>Z</th><th>V</th><th>R</th><th>P</th><th>G</th><th>Body</th></tr>
+        <tr><td>Ošípané</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+        <tr><td>ŠK Altius</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+        <tr><td>Salibandy Bois</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+        <tr><td>Tím číslo 7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+      </table>
     </div>
 
     <h2>Skupina B</h2>
     <div class="group">
-      <div class="table-container">
-        <table>
-          <tr><th>Tím</th><th>Z</th><th>V</th><th>R</th><th>P</th><th>G</th><th>Body</th></tr>
-          <tr><td>INVALIDO</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-          <tr><td>Baŕanie ŕohy</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-          <tr><td>FBC stavbári</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-          <tr><td>Tím číslo 8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
-        </table>
-      </div>
+      <table>
+        <tr><th>Tím</th><th>Z</th><th>V</th><th>R</th><th>P</th><th>G</th><th>Body</th></tr>
+        <tr><td>INVALIDO</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+        <tr><td>Baŕanie ŕohy</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+        <tr><td>FBC stavbári</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+        <tr><td>Tím číslo 8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0:0</td><td>0</td></tr>
+      </table>
     </div>
   </main>
 
@@ -203,6 +179,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
