@@ -26,11 +26,13 @@
 
     header img {
       height: 60px;
+      max-width: 100%;
     }
 
     .countdown-container {
       flex-grow: 1;
       text-align: center;
+      margin-top: 5px;
     }
 
     .countdown-title {
@@ -114,11 +116,42 @@
     tr:hover {
       background-color: #ffe6f0;
     }
+
+    /* Mobilná verzia */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header img {
+        height: 40px;
+        margin-bottom: 5px;
+      }
+
+      .countdown-title {
+        font-size: 20px;
+      }
+
+      .countdown-time {
+        font-size: 14px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      nav a {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="\Users\vbabc\Desktop\ADAM projekty\OFC25\LOGO.webp" alt="Logo">
+    <img src="LOGO.webp" alt="Logo" />
     <div class="countdown-container">
       <div class="countdown-title">OFC25</div>
       <div class="countdown-time" id="countdown">Načítavam odpočítavanie...</div>
@@ -179,8 +212,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
