@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sk">
 <head>
   <meta charset="UTF-8" />
@@ -17,104 +17,48 @@
 
     header {
       background-color: #ff99cc;
-      padding: 10px 15px;
+      padding: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
     }
 
-    .left, .center, .right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .left {
-      flex: 1;
-      justify-content: flex-start;
-    }
-
-    .center {
-      flex: 1;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .right {
-      flex: 1;
-      justify-content: flex-end;
-      text-align: right;
-      flex-direction: column;
-    }
-
     header img {
-      height: 50px;
+      height: 60px;
+    }
+
+    .countdown-container {
+      flex-grow: 1;
+      text-align: center;
     }
 
     .countdown-title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: bold;
       color: #80004d;
-      margin-bottom: 2px;
+      margin-bottom: 5px;
     }
 
     .countdown-time {
-      font-size: 14px;
+      font-size: 18px;
       color: #4d0039;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
     }
 
     nav a {
       color: #4d0039;
       text-decoration: none;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 20px;
     }
 
     nav a:hover {
       color: #cc0066;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .left, .center, .right {
-        flex: 1 1 100%;
-        justify-content: center;
-      }
-
-      .left {
-        order: 1;
-      }
-
-      .center {
-        order: 2;
-        flex-direction: row;
-      }
-
-      .right {
-        order: 3;
-      }
-
-      header img {
-        height: 40px;
-      }
-
-      .countdown-title {
-        font-size: 18px;
-      }
-
-      .countdown-time {
-        font-size: 12px;
-      }
-
-      nav a {
-        font-size: 16px;
-      }
     }
 
     main {
@@ -174,19 +118,15 @@
 </head>
 <body>
   <header>
-    <div class="left">
-      <img src="obrazok\LOGO.webp" alt="Logo">
-    </div>
-    <div class="center">
-      <nav>
-        <a href="index.html">Tabuľka</a>
-        <a href="rozpis.html">Rozpis</a>
-      </nav>
-    </div>
-    <div class="right">
+    <img src="" alt="Logo">
+    <div class="countdown-container">
       <div class="countdown-title">OFC25</div>
       <div class="countdown-time" id="countdown">Načítavam odpočítavanie...</div>
     </div>
+    <nav>
+      <a href="index.html">Tabuľka</a>
+      <a href="rozpis.html">Rozpis</a>
+    </nav>
   </header>
 
   <main>
@@ -239,4 +179,7 @@
   </script>
 </body>
 </html>
+
+
+
 
